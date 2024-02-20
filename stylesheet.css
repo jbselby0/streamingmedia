@@ -1,3 +1,21 @@
+[href]:hover,
+[button]:hover,
+a:hover,
+button:hover,
+[onclick]:hover,
+[role="button"] {
+  cursor: pointer;
+}
+
+[href],
+[button],
+a,
+button,
+[onclick],
+[role="button"] {
+  text-decoration: none;
+}
+
 /* Typeface Styles Below */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
@@ -102,6 +120,7 @@ nav a:hover {
 
 /* Footer Styling */
 footer{
+  margin-top: 200px;
   width: 100%;
   display: flex;
   padding: 4px 0px;
