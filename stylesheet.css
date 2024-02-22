@@ -131,6 +131,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items:stretch;
+  
   background-image: url();
   background-size: cover;
   background-position: center;
@@ -169,6 +170,10 @@ nav a:hover {
   margin: auto;
   color:#F4F4F4;
   width: fit-content;
+}
+
+#card1 a, #card4 a, #card5  a {
+  color: #000000;
 }
 
 .audio-card a h4:hover {
