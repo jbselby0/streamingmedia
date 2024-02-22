@@ -74,8 +74,9 @@ header {
   color: #333;
   padding: 8px;
   text-align: center;
-  top: 8px;
+  top: 0;
   width: 100%;
+  background-color: #f4f4f49e;
 }
 
 nav {
@@ -122,24 +123,61 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  padding: 128px 64px;
 }
 
 .audio-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  background-image: url(images/aloma-cover.png);
+  align-items:stretch;
+  background-image: url();
   background-size: cover;
   background-position: center;
   aspect-ratio: 1/1;
   border: 2px #3F4842;
   border-radius: 16px;
-  margin-top: 120px;
-  margin-left: 25vw;
+  /* margin-top: 120px; */
+  /* margin-left: 25vw; */
+  max-width: 250px;
+  max-height: 250px;
+}
+
+#card1 {
+  background-image: url(images/aloma-cover.png);
+}
+
+#card2 {
+  background-image: url(images/my-road-cover.png);
+}
+
+#card3 {
+  background-image: url(images/papaya-cover.png);
+}
+
+#card4 {
+  background-image: url(images/smoothies-cover.png);
+}
+
+#card5 {
+  background-image: url(images/successful-performance-cover.png);
+}
+
+.audio-card a {
+  position: relative;
+  z-index: 100;
+  margin: auto;
+  color:#F4F4F4;
+  width: fit-content;
+}
+
+.audio-card a h4:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .audio-card audio {
-  padding: 4px 8px;
+  margin-top: 33%;
   margin-bottom: 48px;
 }
 
