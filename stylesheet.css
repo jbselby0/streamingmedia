@@ -118,6 +118,31 @@ nav a:hover {
   }
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.audio-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(images/aloma-cover.png);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border: 2px #3F4842;
+  border-radius: 16px;
+  margin-top: 120px;
+  margin-left: 25vw;
+}
+
+.audio-card audio {
+  padding: 4px 8px;
+  margin-bottom: 48px;
+}
+
 /* Footer Styling */
 footer{
   margin-top: 200px;

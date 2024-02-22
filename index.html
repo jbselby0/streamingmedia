@@ -16,12 +16,35 @@
       <a href="about.html">About</a>
     </nav>
   </header>
-  <main>
-
+  <main class="grid-container">
+    <div class="audio-card">
+      <audio id="audioPlayer" controls src="audio/aloma.mp3"></audio>
+    </div>
   </main>
   <footer>
     <span>&copy; 2024 Silver Tree Entertainment Inc.</span>
     <a href="https://www.silvertree.studio" id="bySilverTreeStudio">Created by Silver Tree Studio.</a>
   </footer>
+  <!-- <script>
+    const audio = document.getElementById('audioPlayer');
+    const backgrounds = ['url(aloma-cover.png)', 'url(best-of-2020-cover.png)', 'url(boozy-brunch-cover.png)']; // Add URLs for your background images
+    
+    // Function to change background image
+    function changeBackground(index) {
+      document.querySelector('.audio-card').style.backgroundImage = backgrounds[index];
+    }
+    
+    // Event listener for when the user skips to the next track
+    audio.addEventListener('nexttrack', function() {
+      currentTrackIndex = (currentTrackIndex + 1) % backgrounds.length;
+      changeBackground(currentTrackIndex);
+    });
+    
+    // Event listener for when the user skips to the previous track
+    audio.addEventListener('previoustrack', function() {
+      currentTrackIndex = (currentTrackIndex - 1 + backgrounds.length) % backgrounds.length;
+      changeBackground(currentTrackIndex);
+    });
+    </script> -->
 </body>
 </html>
