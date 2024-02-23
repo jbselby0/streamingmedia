@@ -108,6 +108,21 @@ nav a:hover {
   color: #F4F4F4;
 }
 
+#accounticon {
+  justify-self: center;
+  border: 1.5px solid #ffffff00;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 3px 8px;
+  padding-top: 8px;
+}
+
+#accounticon:hover {
+  border: 1.5px solid #3F4842;
+  border-radius: 8px;
+  background-color: #F4F4F4;
+}
+
 @media (max-width: 430px) {
   header {
     margin: 0;
