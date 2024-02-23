@@ -81,7 +81,7 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 8px;
   margin-top: 8px;
   justify-items: center;
@@ -90,12 +90,13 @@ nav {
 }
 
 nav a {
-  width: 7ch; /*2nd-option-> fit-content*/
+  width: 21ch; /*2nd-option-> fit-content*/
   border: 1.5px solid #3F4842;
   border-radius: 8px;
   padding: 8px;
   display: block;
   text-align: center;
+  align-self: center;
   color: #3F4842;
   background-color: #F4F4F4;
   text-decoration: none;
