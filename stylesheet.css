@@ -34,6 +34,11 @@ h1, h2, h3, h4 {
   padding: 0 8px 0 8px;
 }
 
+p {
+  margin-block-start: 0;
+margin-block-end: 0;
+}
+
 h1 {
   font-size: 3rem;
   line-height: 1.6;
@@ -160,7 +165,7 @@ nav a:hover {
   grid-template-rows: auto;
 }
 
-#fakebutlooksright {
+.fakebutlooksright {
   border-radius: 4px;
   background-color: maroon;
   padding: 8px 16px;
@@ -246,7 +251,52 @@ nav a:hover {
 }
 
 .playlist {
-  
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 16px;
+  padding: 8px;
+  overflow-y: scroll;
+  background-color: #4d8fe6;
+  width: fit-content;
+  height: 400px;
+}
+
+.txtforcard {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+  max-width: 20ch;
+}
+
+.txtforcard p {
+  text-align: center;
+}
+
+
+.xcard {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  gap: 8px;
+}
+
+.cardimg {
+  width: 160px;
+  height: 120px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#bottomplaylists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 400px) {
+  #bottomplaylists {
+    grid-template-rows: auto;
+  }
 }
 
 /* Footer Styling */
