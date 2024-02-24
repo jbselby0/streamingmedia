@@ -22,7 +22,12 @@ button,
 html {
   font-size: 16px;
   font-family: 'Open Sans';
-  background-color: #F4F4F4;
+  background-color: #0015ff;
+  color: #ffffff;
+}
+
+body {
+  background-color: #0008ff;
 }
 
 h1, h2, h3, h4 {
@@ -63,6 +68,10 @@ a {
   letter-spacing: .05rem;
 }
 
+main {
+  margin-top: 120px;
+}
+
 /* Navigation Styles Below */
 header {
   position: fixed;
@@ -76,7 +85,7 @@ header {
   text-align: center;
   top: 0;
   width: 100%;
-  background-color: #f4f4f49e;
+  background-color: #1429cb;
 }
 
 nav {
@@ -91,36 +100,36 @@ nav {
 
 nav a {
   width: 21ch; /*2nd-option-> fit-content*/
-  border: 1.5px solid #3F4842;
-  border-radius: 8px;
+  border: 1.5px solid #0008ff;
+  /* border-radius: 8px; */
   padding: 8px;
   display: block;
   text-align: center;
   align-self: center;
-  color: #3F4842;
-  background-color: #F4F4F4;
+  color: #ffffff;
+  background-color: #0033ff;
   text-decoration: none;
   transition: background-color 0.2s;
 }
 
 nav a:hover {
-  background-color: #3F4842;
+  background-color: #747aeb;
   color: #F4F4F4;
 }
 
 #accounticon {
   justify-self: center;
   border: 1.5px solid #ffffff00;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   width: fit-content;
   padding: 3px 8px;
   padding-top: 8px;
 }
 
 #accounticon:hover {
-  border: 1.5px solid #3F4842;
-  border-radius: 8px;
-  background-color: #F4F4F4;
+  border: 1.5px solid #1a1eff;
+  /* border-radius: 8px; */
+  background-color: #0800ff;
 }
 
 @media (max-width: 800px) {
@@ -145,12 +154,35 @@ nav a:hover {
   }
 }
 
+.row {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+#fakebutlooksright {
+  border-radius: 4px;
+  background-color: maroon;
+  padding: 8px 16px;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 1.4rem;
+  width: fit-content;
+  margin: 8px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
-  padding: 128px 64px;
+  padding: 0 32px;
   overflow-x: scroll;
+  background-color: #ffffff;
+}
+
+.row h4 {
+  padding: 16px;
+  color: #242649;
 }
 
 .audio-card {
@@ -163,8 +195,8 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   aspect-ratio: 1/1;
-  border: 2px #3F4842;
-  border-radius: 16px;
+  border: 2px #0051ff;
+  /* border-radius: 16px; */
   /* margin-top: 120px; */
   /* margin-left: 25vw; */
   max-width: 250px;
@@ -195,7 +227,7 @@ nav a:hover {
   position: relative;
   z-index: 100;
   margin: auto;
-  color:#F4F4F4;
+  color:#ffffff;
   width: fit-content;
 }
 
@@ -211,6 +243,10 @@ nav a:hover {
 .audio-card audio {
   margin-top: 33%;
   margin-bottom: 48px;
+}
+
+.playlist {
+  
 }
 
 /* Footer Styling */
